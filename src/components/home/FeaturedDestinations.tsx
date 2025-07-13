@@ -4,6 +4,8 @@ import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import simienImage from "@/assets/simien-mountains.jpg";
 import coffeeImage from "@/assets/coffee-ceremony.jpg";
+import denakil from "@/assets/danakil-depression.jpg";
+import lalibela from "@/assets/hero-lalibela.jpg";
 
 const destinations = [
   {
@@ -11,7 +13,7 @@ const destinations = [
     name: "Lalibela",
     region: "Amhara",
     description: "Marvel at the 12th-century rock-hewn churches, carved directly from volcanic rock and still used for worship today.",
-    image: "/api/placeholder/600/400",
+    image: lalibela,
     duration: "2-3 days",
     highlights: ["Rock-hewn churches", "Orthodox pilgrimage", "Ancient architecture"],
     rating: 4.9,
@@ -33,7 +35,7 @@ const destinations = [
     name: "Danakil Depression",
     region: "Afar",
     description: "Explore one of the hottest and lowest places on Earth, with active volcanoes, salt flats, and colorful hot springs.",
-    image: "/api/placeholder/600/400",
+    image: denakil,
     duration: "3-4 days",
     highlights: ["Active volcanoes", "Salt mining", "Erta Ale volcano"],
     rating: 4.7,
