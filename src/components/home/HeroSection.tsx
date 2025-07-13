@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowRight, PlayCircle, Map, Calendar, Coffee, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-lalibela.jpg";
+import heroImage from "@/assets/hero-lalibela (2).jpg";
 import { Link } from "react-router-dom";
 
 const QuickAccessCard = ({ to, icon: Icon, title, subtitle, bg, iconColor }) => (

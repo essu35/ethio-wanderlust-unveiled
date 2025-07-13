@@ -140,11 +140,14 @@ export default function FeaturedDestinations() {
 
         {/* CTA */}
         <div className="text-center">
-          <Button variant="hero" size="lg">
-            View All Destinations
-            <ArrowRight className="w-5 h-5" />
+          <Button variant="hero" size="lg" asChild>
+            <Link to="/destinations">
+              View All Destinations
+              <ArrowRight className="w-5 h-5" />
+            </Link>
           </Button>
         </div>
+
       </div>
     </section>
   );

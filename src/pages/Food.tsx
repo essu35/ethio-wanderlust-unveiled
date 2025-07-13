@@ -5,6 +5,12 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import coffeeImage from "@/assets/coffee-ceremony.jpg";
 import foodImage from "@/assets/ethiopian-food.jpg";
+import injera from "@/assets/food/injera.jpeg";
+import doroWat from "@/assets/food/dorowot.jpg";
+import kitfo from "@/assets/food/kitfo.jpg";
+import shiro from "@/assets/food/shiro.jpg";
+import tibs from "@/assets/food/tibs.jpg";
+import vegetarianCombo from "@/assets/food/vegeterian.jpg";
 
 const dishes = [
   {
@@ -13,7 +19,7 @@ const dishes = [
     type: "Staple",
     spiceLevel: "Mild",
     vegetarian: true,
-    image: "/api/placeholder/300/200"
+    image: injera
   },
   {
     name: "Doro Wat",
@@ -21,7 +27,7 @@ const dishes = [
     type: "Main Course",
     spiceLevel: "Very Hot",
     vegetarian: false,
-    image: "/api/placeholder/300/200"
+    image: doroWat
   },
   {
     name: "Kitfo",
@@ -29,7 +35,7 @@ const dishes = [
     type: "Main Course",
     spiceLevel: "Medium",
     vegetarian: false,
-    image: "/api/placeholder/300/200"
+    image: kitfo
   },
   {
     name: "Shiro",
@@ -37,7 +43,7 @@ const dishes = [
     type: "Main Course",
     spiceLevel: "Medium",
     vegetarian: true,
-    image: "/api/placeholder/300/200"
+    image: shiro
   },
   {
     name: "Tibs",
@@ -45,7 +51,7 @@ const dishes = [
     type: "Main Course",
     spiceLevel: "Medium",
     vegetarian: false,
-    image: "/api/placeholder/300/200"
+    image: tibs
   },
   {
     name: "Vegetarian Combination",
@@ -53,7 +59,7 @@ const dishes = [
     type: "Combination",
     spiceLevel: "Varies",
     vegetarian: true,
-    image: foodImage
+    image: vegetarianCombo
   }
 ];
 
