@@ -8,6 +8,9 @@ import { Card } from "@/components/ui/card";
 import heroImage from "@/assets/hero-lalibela.jpg";
 import simienImage from "@/assets/simien-mountains.jpg";
 import coffeeImage from "@/assets/coffee-ceremony.jpg";
+import omovalleyImage from "@/assets/omo.jpg";
+import addis from "@/assets/addis.jpg";
+import dankali from "@/assets/danakil-depression.jpg";
 
 const destinations = [
   {
@@ -41,7 +44,7 @@ const destinations = [
     name: "Addis Ababa",
     region: "Capital City",
     description: "Explore Ethiopia's vibrant capital with world-class museums, bustling markets, and thriving nightlife. The political and cultural heart of Africa.",
-    image: "/api/placeholder/600/400",
+    image: addis,
     duration: "2-3 days",
     bestTime: "Year-round",
     highlights: ["National Museum", "Merkato market", "Holy Trinity Cathedral", "Cultural restaurants"],
@@ -54,7 +57,7 @@ const destinations = [
     name: "Danakil Depression",
     region: "Afar Region",
     description: "Explore one of the hottest and lowest places on Earth, with active volcanoes, salt flats, and colorful hot springs. An otherworldly experience.",
-    image: "/api/placeholder/600/400",
+    image: dankali,
     duration: "3-4 days",
     bestTime: "Nov-Feb",
     highlights: ["Erta Ale volcano", "Salt mining", "Dallol hot springs", "Extreme landscapes"],
@@ -80,7 +83,7 @@ const destinations = [
     name: "Omo Valley",
     region: "Southern Nations Region",
     description: "Experience one of Africa's most culturally diverse regions, home to indigenous tribes with unique traditions and ways of life.",
-    image: "/api/placeholder/600/400",
+    image: omovalleyImage,
     duration: "4-6 days",
     bestTime: "Oct-Mar",
     highlights: ["Tribal cultures", "Traditional markets", "Bull jumping ceremony", "Cultural immersion"],
