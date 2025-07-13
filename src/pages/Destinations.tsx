@@ -145,32 +145,7 @@ export default function Destinations() {
                 />
               </div>
 
-              {/* Category Filter */}
-              <select
-                value={selectedCategory}
-                onChange={(e) => setSelectedCategory(e.target.value)}
-                className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground"
-              >
-                {categories.map(category => (
-                  <option key={category} value={category}>{category}</option>
-                ))}
-              </select>
 
-              {/* Difficulty Filter */}
-              <select
-                value={selectedDifficulty}
-                onChange={(e) => setSelectedDifficulty(e.target.value)}
-                className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground"
-              >
-                {difficulties.map(difficulty => (
-                  <option key={difficulty} value={difficulty}>{difficulty}</option>
-                ))}
-              </select>
-
-              <Button variant="outline" className="w-full">
-                <Filter className="w-4 h-4 mr-2" />
-                More Filters
-              </Button>
             </div>
           </div>
         </section>
@@ -239,7 +214,7 @@ export default function Destinations() {
                       <span>Difficulty: {destination.difficulty}</span>
                     </div>
 
-                    <Button variant="outline" className="w-full group">
+                    <Button variant="outline" className="w-full group"   onClick={() => {console.log("Clicked destination id:", destination.id);  }}>
                       Learn More
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Button>

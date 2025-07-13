@@ -1,4 +1,5 @@
 import { Crown, Coffee, Mountain, Users, Calendar, Globe } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const reasons = [
   {
@@ -89,12 +90,18 @@ export default function WhyEthiopia() {
               Your adventure of a lifetime awaits.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-white/90 transition-colors">
-                Start Planning
-              </button>
-              <button className="border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors">
-                Download Guide
-              </button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link to="/destinations" className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-white/90 transition-colors text-center">
+                  Start Planning
+                </Link>
+                <a
+                  href="/guide.pdf"
+                  download
+                  className="border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors text-center"
+                >
+                  Download Guide
+                </a>
+              </div>
             </div>
           </div>
         </div>

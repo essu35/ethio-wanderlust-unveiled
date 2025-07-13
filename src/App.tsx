@@ -12,6 +12,7 @@ import Itineraries from "./pages/Itineraries";
 import Blog from "./pages/Blog";
 import PlanTrip from "./pages/PlanTrip";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "@/components/ui/scrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/destinations" element={<Destinations />} />
