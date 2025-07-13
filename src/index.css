@@ -8,35 +8,60 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Ethiopian-inspired color palette */
+    --background: 45 15% 97%;
+    --foreground: 20 15% 12%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 45 25% 95%;
+    --card-foreground: 20 15% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 45 25% 95%;
+    --popover-foreground: 20 15% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Rich Ethiopian red as primary */
+    --primary: 12 85% 45%;
+    --primary-foreground: 45 25% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm coffee brown as secondary */
+    --secondary: 25 35% 25%;
+    --secondary-foreground: 45 25% 95%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Soft earth tones */
+    --muted: 40 20% 88%;
+    --muted-foreground: 25 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Golden accent inspired by traditional textiles */
+    --accent: 42 95% 65%;
+    --accent-foreground: 20 15% 12%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 45 25% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 40 15% 82%;
+    --input: 40 15% 82%;
+    --ring: 12 85% 45%;
 
-    --radius: 0.5rem;
+    /* Ethiopian green for highlights */
+    --success: 142 60% 35%;
+    --success-foreground: 45 25% 95%;
+
+    /* Additional Ethiopian-inspired tokens */
+    --terra-cotta: 18 75% 55%;
+    --coffee-dark: 25 45% 15%;
+    --highland-green: 142 45% 25%;
+    --sunset-gold: 42 85% 55%;
+    --stone-gray: 30 8% 45%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--terra-cotta)));
+    --gradient-sunset: linear-gradient(180deg, hsl(var(--sunset-gold)), hsl(var(--primary)));
+    --gradient-highland: linear-gradient(135deg, hsl(var(--highland-green)), hsl(var(--success)));
+
+    /* Shadows with Ethiopian warmth */
+    --shadow-warm: 0 10px 30px -5px hsl(var(--primary) / 0.2);
+    --shadow-card: 0 4px 20px -4px hsl(var(--coffee-dark) / 0.15);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 

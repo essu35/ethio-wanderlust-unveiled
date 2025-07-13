@@ -61,7 +61,26 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				/* Ethiopian color palette */
+				'terra-cotta': 'hsl(var(--terra-cotta))',
+				'coffee-dark': 'hsl(var(--coffee-dark))',
+				'highland-green': 'hsl(var(--highland-green))',
+				'sunset-gold': 'hsl(var(--sunset-gold))',
+				'stone-gray': 'hsl(var(--stone-gray))',
+				success: {
+					DEFAULT: 'hsl(var(--success))',
+					foreground: 'hsl(var(--success-foreground))'
 				}
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-sunset': 'var(--gradient-sunset)',
+				'gradient-highland': 'var(--gradient-highland)'
+			},
+			boxShadow: {
+				'warm': 'var(--shadow-warm)',
+				'card': 'var(--shadow-card)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
