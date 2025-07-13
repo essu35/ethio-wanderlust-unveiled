@@ -1,6 +1,7 @@
 import { ArrowRight, MapPin, Clock, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import simienImage from "@/assets/simien-mountains.jpg";
 import coffeeImage from "@/assets/coffee-ceremony.jpg";
 
@@ -124,9 +125,11 @@ export default function FeaturedDestinations() {
                   ))}
                 </div>
 
-                <Button variant="outline" className="w-full group">
-                  Explore {destination.name}
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <Button variant="outline" className="w-full group" asChild>
+                  <Link to={`/destinations/${destination.id}`}>
+                    Explore {destination.name}
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
                 </Button>
               </div>
             </Card>

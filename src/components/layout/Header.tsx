@@ -11,7 +11,6 @@ const navigation = [
   { name: "Itineraries", href: "/itineraries" },
   { name: "Food & Drink", href: "/food" },
   { name: "Blog", href: "/blog" },
-  { name: "About", href: "/about" },
 ];
 
 export default function Header() {
@@ -62,8 +61,8 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Button variant="hero" size="sm" className="ml-4">
-                Plan Your Trip
+              <Button variant="hero" size="sm" className="ml-4" asChild>
+                <Link to="/plan-trip">Plan Your Trip</Link>
               </Button>
             </div>
           </div>
@@ -105,8 +104,8 @@ export default function Header() {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <Button variant="hero" size="sm" className="w-full">
-                  Plan Your Trip
+                <Button variant="hero" size="sm" className="w-full" asChild>
+                  <Link to="/plan-trip">Plan Your Trip</Link>
                 </Button>
               </div>
             </div>
