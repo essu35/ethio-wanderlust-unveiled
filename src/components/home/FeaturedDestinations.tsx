@@ -6,6 +6,8 @@ import simienImage from "@/assets/simien-mountains.jpg";
 import coffeeImage from "@/assets/coffee-ceremony.jpg";
 import denakil from "@/assets/danakil-depression.jpg";
 import lalibela from "@/assets/hero-lalibela.jpg";
+import addisImage from "@/assets/addis.jpg";
+import omoImage from "@/assets/omo.jpg";
 
 const destinations = [
   {
@@ -20,7 +22,7 @@ const destinations = [
     tag: "UNESCO World Heritage"
   },
   {
-    id: "simien",
+    id: "simien-mountains",
     name: "Simien Mountains",
     region: "Amhara",
     description: "Trek through dramatic landscapes and encounter endemic wildlife including Gelada monkeys and Ethiopian wolves.",
@@ -31,7 +33,7 @@ const destinations = [
     tag: "Adventure"
   },
   {
-    id: "danakil",
+    id: "danakil-depression",
     name: "Danakil Depression",
     region: "Afar",
     description: "Explore one of the hottest and lowest places on Earth, with active volcanoes, salt flats, and colorful hot springs.",
@@ -42,7 +44,7 @@ const destinations = [
     tag: "Extreme Adventure"
   },
   {
-    id: "coffee",
+    id: "coffee-regions",
     name: "Coffee Culture Experience",
     region: "Multiple Regions",
     description: "Discover the birthplace of coffee through traditional ceremonies and visits to ancient coffee forests.",
@@ -51,6 +53,28 @@ const destinations = [
     highlights: ["Coffee ceremony", "Ancient forests", "Local traditions"],
     rating: 4.9,
     tag: "Cultural"
+  },
+  {
+    id: "addis-ababa",
+    name: "Addis Ababa",
+    region: "Addis Ababa",
+    description: "Explore Ethiopia's vibrant capital city, home to the African Union, National Museum, and rich cultural heritage.",
+    image: addisImage,
+    duration: "2-3 days",
+    highlights: ["National Museum", "Holy Trinity Cathedral", "Merkato Market"],
+    rating: 4.6,
+    tag: "Urban Culture"
+  },
+  {
+    id: "omo-valley",
+    name: "Omo Valley",
+    region: "Southern Nations",
+    description: "Discover the diverse tribal cultures and traditions in one of Africa's most ethnically diverse regions.",
+    image: omoImage,
+    duration: "5-7 days",
+    highlights: ["Tribal encounters", "Traditional ceremonies", "Cultural immersion"],
+    rating: 4.8,
+    tag: "Cultural Heritage"
   }
 ];
 
