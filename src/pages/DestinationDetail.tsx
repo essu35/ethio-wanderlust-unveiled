@@ -8,17 +8,30 @@ import Footer from "@/components/layout/Footer";
 import { Link } from "react-router-dom";
 import simienImage from "@/assets/simien-mountains.jpg";
 import coffeeImage from "@/assets/coffee-ceremony.jpg";
-import hararImage from "@/assets/harar-city.jpg";
-import danakilImage from "@/assets/danakil-depression.jpg";
+import denakilImage from "@/assets/danakil-depression.jpg";
+import lalibelaImage from "@/assets/hero-lalibela.jpg";
+import lalibela1 from "@/assets/destination/lalibela1.jpeg";
+import lalibela2 from "@/assets/destination/lalibela2.jpeg";
+import lalibela3 from "@/assets/destination/lalibela3.jpeg";
+import denkali1 from "@/assets/destination/denkali1.jpeg";
+import denkali2 from "@/assets/destination/denkali2.jpeg";  
+import denkali3 from "@/assets/destination/denkali3.jpeg";
+import coffe1 from "@/assets/destination/coffe1.jpeg";
+import coffe2 from "@/assets/destination/coffe2.jpeg"; 
+import coffe3 from "@/assets/destination/coffe3.jpeg";
+import semien1 from "@/assets/destination/semien1.jpeg";
+import semien2 from "@/assets/destination/semien2.jpeg";
+import semien3 from "@/assets/destination/semien3.jpeg";
 
 const destinations = {
   lalibela: {
+    id: "lalibela",
     name: "Lalibela",
     region: "Amhara Region",
     description: "Marvel at the 12th-century rock-hewn churches, carved directly from volcanic rock and still used for worship today.",
     longDescription: "Lalibela, often called the 'New Jerusalem', is home to eleven magnificent rock-hewn churches dating from the 12th century. Carved directly from volcanic rock during the reign of King Lalibela, these architectural marvels continue to serve as active places of worship for Ethiopian Orthodox Christians. The churches are connected by a series of trenches and tunnels, creating a sacred landscape that has remained virtually unchanged for 800 years.",
-    image: "/api/placeholder/800/600",
-    gallery: ["/api/placeholder/600/400", "/api/placeholder/600/400", "/api/placeholder/600/400"],
+    image: lalibelaImage,
+    gallery: [lalibela1, lalibela2, lalibela3],
     duration: "2-3 days",
     bestTime: "October to March",
     highlights: [
@@ -38,12 +51,13 @@ const destinations = {
     tag: "UNESCO World Heritage"
   },
   simien: {
+    id: "simien",
     name: "Simien Mountains",
     region: "Amhara Region", 
     description: "Trek through dramatic landscapes and encounter endemic wildlife including Gelada monkeys and Ethiopian wolves.",
     longDescription: "The Simien Mountains National Park offers some of Africa's most spectacular mountain scenery. This UNESCO World Heritage site features dramatic escarpments, deep valleys, and high plateaus that are home to endemic species like the Gelada monkey and the rare Ethiopian wolf. The park's diverse ecosystems range from montane grasslands to Afro-alpine moorlands, providing trekkers with an unforgettable wilderness experience.",
     image: simienImage,
-    gallery: [simienImage, "/api/placeholder/600/400", "/api/placeholder/600/400"],
+    gallery: [semien1, semien2, semien3],
     duration: "4-7 days",
     bestTime: "October to March",
     highlights: [
@@ -63,12 +77,13 @@ const destinations = {
     tag: "Adventure"
   },
   danakil: {
+    id: "danakil-depression",
     name: "Danakil Depression",
     region: "Afar Region",
     description: "Explore one of the hottest and lowest places on Earth, with active volcanoes, salt flats, and colorful hot springs.",
     longDescription: "The Danakil Depression is one of the most geologically active and inhospitable places on Earth. Located at the junction of three tectonic plates, this alien landscape features active volcanoes, sulfur springs, salt flats, and lava lakes. Despite the extreme conditions, the region is home to the Afar people who have adapted to this harsh environment and continue their traditional salt mining practices.",
-    image: danakilImage,
-    gallery: [danakilImage, "/api/placeholder/600/400", "/api/placeholder/600/400"],
+    image: denakilImage,
+    gallery: [denkali1, denkali2, denkali3],
     duration: "3-4 days",
     bestTime: "November to February",
     highlights: [
@@ -88,12 +103,13 @@ const destinations = {
     tag: "Extreme Adventure"
   },
   coffee: {
+    id: "coffee-regions",
     name: "Coffee Culture Experience",
     region: "Multiple Regions",
     description: "Discover the birthplace of coffee through traditional ceremonies and visits to ancient coffee forests.",
     longDescription: "Ethiopia is the birthplace of coffee, and the country's coffee culture runs deep through its social fabric. From the ancient coffee forests of Kaffa to the elaborate coffee ceremonies performed in homes across the country, coffee is more than a beverage – it's a way of life. Experience the journey from bean to cup while learning about the ritual significance of coffee in Ethiopian society.",
     image: coffeeImage,
-    gallery: [coffeeImage, "/api/placeholder/600/400", "/api/placeholder/600/400"],
+    gallery: [coffe1, coffe2, coffe3],
     duration: "1-2 days",
     bestTime: "Year-round",
     highlights: [
