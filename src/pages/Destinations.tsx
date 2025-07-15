@@ -11,6 +11,7 @@ import coffeeImage from "@/assets/coffee-ceremony.jpg";
 import omovalleyImage from "@/assets/omo.jpg";
 import addis from "@/assets/addis.jpg";
 import dankali from "@/assets/danakil-depression.jpg";
+import { Link } from "react-router-dom";
 
 const destinations = [
   {
@@ -151,96 +152,115 @@ export default function Destinations() {
         </section>
 
         {/* Destinations Grid */}
-        <section className="py-16">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredDestinations.map((destination) => (
-                <Card key={destination.id} className="group overflow-hidden border-0 shadow-card hover:shadow-warm transition-all duration-500 hover:scale-[1.02]">
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={destination.image}
-                      alt={destination.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-coffee-dark/60 via-transparent to-transparent" />
-                    
-                    {/* Category Badge */}
-                    <div className="absolute top-3 left-3">
-                      <span className="bg-accent text-accent-foreground px-2 py-1 rounded-full text-xs font-medium">
-                        {destination.category}
-                      </span>
-                    </div>
+<section className="py-16">
+  <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {filteredDestinations.map((destination) => (
+        <Card
+          key={destination.id}
+          className="group overflow-hidden border-0 shadow-card hover:shadow-warm transition-all duration-500 hover:scale-[1.02] flex flex-col"
+        >
+          {/* Image & Badges */}
+          <div className="relative h-48 overflow-hidden">
+            <img
+              src={destination.image}
+              alt={destination.name}
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-coffee-dark/60 via-transparent to-transparent" />
 
-                    {/* Rating */}
-                    <div className="absolute top-3 right-3 flex items-center space-x-1 bg-background/20 backdrop-blur-sm rounded-full px-2 py-1">
-                      <Star className="w-3 h-3 text-accent fill-current" />
-                      <span className="text-xs font-medium text-white">{destination.rating}</span>
-                    </div>
-                  </div>
+            {/* Category Badge */}
+            <div className="absolute top-3 left-3">
+              <span className="bg-accent text-accent-foreground px-2 py-1 rounded-full text-xs font-medium">
+                {destination.category}
+              </span>
+            </div>
 
-                  <div className="p-6">
-                    <div className="flex items-start justify-between mb-3">
-                      <div>
-                        <h3 className="text-xl font-bold text-foreground mb-1">{destination.name}</h3>
-                        <p className="text-sm text-muted-foreground">{destination.region}</p>
-                      </div>
-                      <div className="text-right text-sm text-muted-foreground">
-                        <div className="flex items-center space-x-1">
-                          <Clock className="w-3 h-3" />
-                          <span>{destination.duration}</span>
-                        </div>
-                      </div>
-                    </div>
+            {/* Rating */}
+            <div className="absolute top-3 right-3 flex items-center space-x-1 bg-background/20 backdrop-blur-sm rounded-full px-2 py-1">
+              <Star className="w-3 h-3 text-accent fill-current" />
+              <span className="text-xs font-medium text-white">{destination.rating}</span>
+            </div>
+          </div>
 
-                    <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
-                      {destination.description}
-                    </p>
+          {/* Card Content */}
+          <div className="p-6 flex flex-col flex-1">
+            {/* Title & Region & Duration */}
+            <div className="flex items-start justify-between mb-3">
+              <div>
+                <h3 className="text-xl font-bold text-foreground mb-1">{destination.name}</h3>
+                <p className="text-sm text-muted-foreground">{destination.region}</p>
+              </div>
+              <div className="text-right text-sm text-muted-foreground">
+                <div className="flex items-center space-x-1">
+                  <Clock className="w-3 h-3" />
+                  <span>{destination.duration}</span>
+                </div>
+              </div>
+            </div>
 
-                    {/* Highlights */}
-                    <div className="flex flex-wrap gap-1 mb-4">
-                      {destination.highlights.slice(0, 3).map((highlight) => (
-                        <span
-                          key={highlight}
-                          className="bg-muted text-muted-foreground px-2 py-1 rounded text-xs"
-                        >
-                          {highlight}
-                        </span>
-                      ))}
-                    </div>
+            {/* Description */}
+            <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
+              {destination.description}
+            </p>
 
-                    {/* Details */}
-                    <div className="flex justify-between items-center text-xs text-muted-foreground mb-4">
-                      <span>Best: {destination.bestTime}</span>
-                      <span>Difficulty: {destination.difficulty}</span>
-                    </div>
-
-                    <Button variant="outline" className="w-full group"   onClick={() => {console.log("Clicked destination id:", destination.id);  }}>
-                      Learn More
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                  </div>
-                </Card>
+            {/* Highlights */}
+            <div className="flex flex-wrap gap-1 mb-4">
+              {destination.highlights.slice(0, 3).map((highlight) => (
+                <span
+                  key={highlight}
+                  className="bg-muted text-muted-foreground px-2 py-1 rounded text-xs"
+                >
+                  {highlight}
+                </span>
               ))}
             </div>
 
-            {filteredDestinations.length === 0 && (
-              <div className="text-center py-12">
-                <p className="text-muted-foreground text-lg">No destinations found matching your criteria.</p>
-                <Button 
-                  variant="outline" 
-                  onClick={() => {
-                    setSearchTerm("");
-                    setSelectedCategory("All");
-                    setSelectedDifficulty("All");
-                  }}
-                  className="mt-4"
+            {/* Best Time & Difficulty */}
+            <div className="flex justify-between items-center text-xs text-muted-foreground mb-4">
+              <span>Best: {destination.bestTime}</span>
+              <span>Difficulty: {destination.difficulty}</span>
+            </div>
+
+            {/* Button pinned at bottom */}
+            <div className="mt-auto pt-2">
+              <Button variant="outline" className="w-full group" onClick={() => { console.log("Clicked destination id:", destination.id); }}>
+                <Link
+                  to={`/destinations/${destination.id}`}
+                  className="flex items-center justify-center gap-2 group w-full"
                 >
-                  Clear Filters
-                </Button>
-              </div>
-            )}
+                  Learn More
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+            </div>
           </div>
-        </section>
+        </Card>
+      ))}
+    </div>
+
+    {/* Empty state */}
+    {filteredDestinations.length === 0 && (
+      <div className="text-center py-12">
+        <p className="text-muted-foreground text-lg">
+          No destinations found matching your criteria.
+        </p>
+        <Button
+          variant="outline"
+          onClick={() => {
+            setSearchTerm("");
+            setSelectedCategory("All");
+            setSelectedDifficulty("All");
+          }}
+          className="mt-4"
+        >
+          Clear Filters
+        </Button>
+      </div>
+    )}
+  </div>
+</section>
+
       </main>
 
       <Footer />
