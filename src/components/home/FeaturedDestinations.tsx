@@ -20,7 +20,7 @@ const destinations = [
     tag: "UNESCO World Heritage"
   },
   {
-    id: "simien",
+    id: "simien-mountains",
     name: "Simien Mountains",
     region: "Amhara",
     description: "Trek through dramatic landscapes and encounter endemic wildlife including Gelada monkeys and Ethiopian wolves.",

@@ -50,8 +50,8 @@ const destinations = {
     difficulty: "Easy",
     tag: "UNESCO World Heritage"
   },
-  simien: {
-    id: "simien",
+  "simien-mountains": {
+    id: "simien-mountains",
     name: "Simien Mountains",
     region: "Amhara Region", 
     description: "Trek through dramatic landscapes and encounter endemic wildlife including Gelada monkeys and Ethiopian wolves.",
@@ -76,7 +76,7 @@ const destinations = {
     difficulty: "Moderate to Challenging",
     tag: "Adventure"
   },
-  danakil: {
+  "danakil-depression": {
     id: "danakil-depression",
     name: "Danakil Depression",
     region: "Afar Region",
@@ -102,7 +102,7 @@ const destinations = {
     difficulty: "Extreme",
     tag: "Extreme Adventure"
   },
-  coffee: {
+  "coffee-regions": {
     id: "coffee-regions",
     name: "Coffee Culture Experience",
     region: "Multiple Regions",
