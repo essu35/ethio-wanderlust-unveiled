@@ -24,6 +24,12 @@ import semien2 from "@/assets/destination/semien2.jpeg";
 import semien3 from "@/assets/destination/semien3.jpeg";
 import addisImage from "@/assets/addis.jpg";
 import omoImage from "@/assets/omo.jpg";
+import addis1 from "@/assets/destination/addis1.jpg";
+import addis2 from "@/assets/destination/addsi2.jpg";  
+import addis3 from "@/assets/destination/addis3.jpg";
+import omo1 from "@/assets/destination/omo1.jpeg";
+import omo2 from "@/assets/destination/omo2.jpg";
+import omo3 from "@/assets/destination/omo3.jpeg";
 
 const destinations = {
   lalibela: {
@@ -137,7 +143,7 @@ const destinations = {
     description: "Explore Ethiopia's vibrant capital city, home to the African Union, National Museum, and rich cultural heritage.",
     longDescription: "Addis Ababa, meaning 'New Flower' in Amharic, is Ethiopia's sprawling capital and the diplomatic heart of Africa. Home to the African Union headquarters, this high-altitude city offers a fascinating blend of traditional and modern Ethiopian culture. From the National Museum housing Lucy's remains to bustling markets and world-class restaurants, Addis Ababa provides an authentic gateway to understanding Ethiopia.",
     image: addisImage,
-    gallery: [addisImage, addisImage, addisImage],
+    gallery: [addis1, addis2, addis3],
     duration: "2-3 days",
     bestTime: "October to March",
     highlights: [
@@ -163,7 +169,7 @@ const destinations = {
     description: "Discover the diverse tribal cultures and traditions in one of Africa's most ethnically diverse regions.",
     longDescription: "The Omo Valley is a UNESCO World Heritage site and one of the most culturally diverse regions in Africa. Home to over 20 distinct ethnic groups, each with their own unique traditions, languages, and customs. From the lip plates of the Mursi people to the body painting of the Karo tribe, the Omo Valley offers an unparalleled opportunity to experience authentic African tribal cultures that have remained largely unchanged for centuries.",
     image: omoImage,
-    gallery: [omoImage, omoImage, omoImage],
+    gallery: [omo1, omo2, omo3],
     duration: "5-7 days",
     bestTime: "September to March",
     highlights: [
