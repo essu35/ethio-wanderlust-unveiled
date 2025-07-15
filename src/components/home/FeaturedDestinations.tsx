@@ -31,7 +31,7 @@ const destinations = [
     tag: "Adventure"
   },
   {
-    id: "danakil",
+    id: "danakil-depression",
     name: "Danakil Depression",
     region: "Afar",
     description: "Explore one of the hottest and lowest places on Earth, with active volcanoes, salt flats, and colorful hot springs.",
@@ -42,7 +42,7 @@ const destinations = [
     tag: "Extreme Adventure"
   },
   {
-    id: "coffee",
+    id: "coffee-regions",
     name: "Coffee Culture Experience",
     region: "Multiple Regions",
     description: "Discover the birthplace of coffee through traditional ceremonies and visits to ancient coffee forests.",
