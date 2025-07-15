@@ -1,4 +1,4 @@
-import { Calendar, Clock, User, ArrowRight, Search } from "lucide-react";
+import { Calendar, Clock, User, ArrowRight, Search, Users, Mountain, Camera } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -8,6 +8,9 @@ import Footer from "@/components/layout/Footer";
 import coffeeImage from "@/assets/coffee-ceremony.jpg";
 import hararImage from "@/assets/harar-city.jpg";
 import simienImage from "@/assets/simien-mountains.jpg";
+import wildlifeImage from "@/assets/blog/ethiopia-wildlife.jpg";
+import natureImage from "@/assets/blog/ethiopia-nature.jpg";
+import omoImage from "@/assets/blog/omo-valley-culture.jpg";
 
 const blogPosts = [
   {
@@ -45,7 +48,7 @@ const blogPosts = [
     id: 4,
     title: "Timkat Festival: Ethiopia's Greatest Celebration",
     excerpt: "Experience the vibrant colors, ancient rituals, and joyous atmosphere of Ethiopian Orthodox Epiphany.",
-    image: "/api/placeholder/600/400",
+    image: wildlifeImage,
     author: "Rahel Tadesse",
     date: "November 28, 2024",
     readTime: "10 min read",
@@ -55,7 +58,7 @@ const blogPosts = [
     id: 5,
     title: "Hidden Gems of the Omo Valley",
     excerpt: "Explore the remote tribes and pristine landscapes of one of Africa's most culturally diverse regions.",
-    image: "/api/placeholder/600/400",
+    image: omoImage,
     author: "David Park",
     date: "November 20, 2024",
     readTime: "9 min read",
@@ -65,11 +68,41 @@ const blogPosts = [
     id: 6,
     title: "Ethiopian Cuisine: Beyond Injera",
     excerpt: "A culinary journey through Ethiopia's diverse regional flavors and lesser-known delicacies.",
-    image: "/api/placeholder/600/400",
+    image: natureImage,
     author: "Marta Gonzalez",
     date: "November 15, 2024",
     readTime: "7 min read",
     category: "Food"
+  },
+  {
+    id: 7,
+    title: "Photography Guide: Capturing Ethiopia's Beauty",
+    excerpt: "Essential tips for photographing Ethiopia's stunning landscapes, wildlife, and cultural ceremonies.",
+    image: simienImage,
+    author: "James Wilson",
+    date: "November 8, 2024",
+    readTime: "11 min read",
+    category: "Photography"
+  },
+  {
+    id: 8,
+    title: "Addis Ababa: Gateway to Ancient Ethiopia",
+    excerpt: "Discover the bustling capital where modernity meets tradition, museums, markets, and authentic Ethiopian culture.",
+    image: hararImage,
+    author: "Alemayehu Teshome",
+    date: "October 30, 2024",
+    readTime: "8 min read",
+    category: "Culture"
+  },
+  {
+    id: 9,
+    title: "Rock Churches of Lalibela: A Spiritual Journey",
+    excerpt: "Deep dive into the construction, history, and spiritual significance of Ethiopia's most famous churches.",
+    image: coffeeImage,
+    author: "Sister Mary Catherine",
+    date: "October 22, 2024",
+    readTime: "14 min read",
+    category: "Culture"
   }
 ];
 
@@ -236,6 +269,66 @@ export default function Blog() {
             <Button variant="outline" size="lg">
               Load More Stories
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter Section */}
+      <section className="py-16 bg-gradient-subtle">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-foreground mb-4">
+            Stay Connected with Ethiopia
+          </h2>
+          <p className="text-xl text-muted-foreground mb-8">
+            Get weekly travel insights, cultural stories, and exclusive Ethiopia travel tips 
+            delivered to your inbox.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <Input 
+              placeholder="Enter your email address"
+              className="flex-1"
+              type="email"
+            />
+            <Button variant="hero">
+              Subscribe
+            </Button>
+          </div>
+          
+          <p className="text-sm text-muted-foreground mt-4">
+            Join 10,000+ travelers exploring Ethiopia. Unsubscribe anytime.
+          </p>
+        </div>
+      </section>
+
+      {/* Popular Categories */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-foreground mb-12 text-center">
+            Explore by Category
+          </h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { name: "Cultural Heritage", count: 15, icon: Users, color: "bg-blue-500" },
+              { name: "Adventure Tours", count: 12, icon: Mountain, color: "bg-green-500" },
+              { name: "Food & Cuisine", count: 8, icon: Calendar, color: "bg-orange-500" },
+              { name: "Wildlife", count: 10, icon: Camera, color: "bg-purple-500" },
+              { name: "Photography", count: 6, icon: Camera, color: "bg-pink-500" },
+              { name: "Festivals", count: 9, icon: Calendar, color: "bg-red-500" }
+            ].map((category) => (
+              <Card key={category.name} className="p-6 hover:shadow-warm transition-all duration-300 cursor-pointer group">
+                <div className="flex items-center space-x-4">
+                  <div className={`p-3 rounded-full ${category.color} text-white group-hover:scale-110 transition-transform`}>
+                    <category.icon className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-foreground">{category.name}</h3>
+                    <p className="text-sm text-muted-foreground">{category.count} articles</p>
+                  </div>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </section>

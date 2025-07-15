@@ -22,6 +22,8 @@ import coffe3 from "@/assets/destination/coffe3.jpeg";
 import semien1 from "@/assets/destination/semien1.jpeg";
 import semien2 from "@/assets/destination/semien2.jpeg";
 import semien3 from "@/assets/destination/semien3.jpeg";
+import addisImage from "@/assets/addis.jpg";
+import omoImage from "@/assets/omo.jpg";
 
 const destinations = {
   lalibela: {
@@ -127,6 +129,58 @@ const destinations = {
     rating: 4.9,
     difficulty: "Easy",
     tag: "Cultural"
+  },
+  "addis-ababa": {
+    id: "addis-ababa",
+    name: "Addis Ababa",
+    region: "Addis Ababa",
+    description: "Explore Ethiopia's vibrant capital city, home to the African Union, National Museum, and rich cultural heritage.",
+    longDescription: "Addis Ababa, meaning 'New Flower' in Amharic, is Ethiopia's sprawling capital and the diplomatic heart of Africa. Home to the African Union headquarters, this high-altitude city offers a fascinating blend of traditional and modern Ethiopian culture. From the National Museum housing Lucy's remains to bustling markets and world-class restaurants, Addis Ababa provides an authentic gateway to understanding Ethiopia.",
+    image: addisImage,
+    gallery: [addisImage, addisImage, addisImage],
+    duration: "2-3 days",
+    bestTime: "October to March",
+    highlights: [
+      "National Museum and Lucy exhibit",
+      "Holy Trinity Cathedral", 
+      "Merkato - Africa's largest market",
+      "Ethnological Museum",
+      "Mount Entoto viewpoint"
+    ],
+    activities: [
+      { name: "City tours", icon: Users, duration: "4-6 hours" },
+      { name: "Museum visits", icon: Calendar, duration: "2-3 hours" },
+      { name: "Market exploration", icon: Camera, duration: "3-4 hours" }
+    ],
+    rating: 4.6,
+    difficulty: "Easy",
+    tag: "Urban Culture"
+  },
+  "omo-valley": {
+    id: "omo-valley",
+    name: "Omo Valley",
+    region: "Southern Nations",
+    description: "Discover the diverse tribal cultures and traditions in one of Africa's most ethnically diverse regions.",
+    longDescription: "The Omo Valley is a UNESCO World Heritage site and one of the most culturally diverse regions in Africa. Home to over 20 distinct ethnic groups, each with their own unique traditions, languages, and customs. From the lip plates of the Mursi people to the body painting of the Karo tribe, the Omo Valley offers an unparalleled opportunity to experience authentic African tribal cultures that have remained largely unchanged for centuries.",
+    image: omoImage,
+    gallery: [omoImage, omoImage, omoImage],
+    duration: "5-7 days",
+    bestTime: "September to March",
+    highlights: [
+      "Mursi tribe and lip plates",
+      "Karo tribe body painting",
+      "Hamar bull jumping ceremony",
+      "Traditional tribal markets",
+      "Omo River landscapes"
+    ],
+    activities: [
+      { name: "Tribal village visits", icon: Users, duration: "Full day" },
+      { name: "Cultural ceremonies", icon: Calendar, duration: "2-4 hours" },
+      { name: "Photography tours", icon: Camera, duration: "Full day" }
+    ],
+    rating: 4.8,
+    difficulty: "Moderate",
+    tag: "Cultural Heritage"
   }
 };
 

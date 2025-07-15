@@ -6,6 +6,8 @@ import simienImage from "@/assets/simien-mountains.jpg";
 import coffeeImage from "@/assets/coffee-ceremony.jpg";
 import denakil from "@/assets/danakil-depression.jpg";
 import lalibela from "@/assets/hero-lalibela.jpg";
+import addisImage from "@/assets/addis.jpg";
+import omoImage from "@/assets/omo.jpg";
 
 const destinations = [
   {
@@ -51,6 +53,28 @@ const destinations = [
     highlights: ["Coffee ceremony", "Ancient forests", "Local traditions"],
     rating: 4.9,
     tag: "Cultural"
+  },
+  {
+    id: "addis-ababa",
+    name: "Addis Ababa",
+    region: "Addis Ababa",
+    description: "Explore Ethiopia's vibrant capital city, home to the African Union, National Museum, and rich cultural heritage.",
+    image: addisImage,
+    duration: "2-3 days",
+    highlights: ["National Museum", "Holy Trinity Cathedral", "Merkato Market"],
+    rating: 4.6,
+    tag: "Urban Culture"
+  },
+  {
+    id: "omo-valley",
+    name: "Omo Valley",
+    region: "Southern Nations",
+    description: "Discover the diverse tribal cultures and traditions in one of Africa's most ethnically diverse regions.",
+    image: omoImage,
+    duration: "5-7 days",
+    highlights: ["Tribal encounters", "Traditional ceremonies", "Cultural immersion"],
+    rating: 4.8,
+    tag: "Cultural Heritage"
   }
 ];
 
